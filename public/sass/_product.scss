@@ -1,0 +1,103 @@
+.viewPoductFlex {
+  @extend .flex_center; 
+  flex-direction: column;
+}
+.collection {
+  color: $colorEtiam;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  div {
+    width: 63px;
+    height: 3px;
+    background-color: #ef5b70;
+    margin: 5px auto 0;
+  }
+}
+.viewProductName {
+  p {
+      color: #4d4d4d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  text-align: center;
+  margin-top: 17px;
+}
+.viewProductInfo {
+  P {
+    width: 618px;
+    text-align: center;
+    margin: 20px auto;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; 
+  }
+}
+.materialDesigner {
+  @extend .flex_between;
+  margin: 0 auto;
+  width: 335px;
+  color: #b9b9b9;;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  span {
+    color: #2f2f2f;
+  }
+}
+.viewProducPrice {
+  color: #ef5b70;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+.choose {
+  @extend .flex_between;
+  width: 538px;
+  margin-top: 107px;
+  p {
+    margin-bottom: 15px;
+    color: #2f2f2f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  select, input[type="number"] {
+    width: 144px;
+    height: 35px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    padding-left: 15px;
+  }
+}
+.viewProductAddCart {
+  margin-top: 28px;
+  text-align: center;
+  width: 537px;
+  height: 35px;
+  @extend .flex_center;
+  align-content: center;
+  background: #fff;
+  color: $colorEtiam;
+  border: 1px solid #ef5b70;
+  background-color: #ffffff;
+}
+p.youMayLike{
+  margin-top: 140px;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.containerProducts_margin {
+  margin-bottom: -140px;
+}

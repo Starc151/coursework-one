@@ -1,0 +1,40 @@
+.checkout {
+  margin-top: 55px;
+  &__name {
+    color: $colorFontMain;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__h3_name{
+    color: $colorFontMain;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 20px;  
+  }
+  &__h3_text {
+    padding-top: 15px;
+    color: #b3b2b2;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.checkout__left {
+  margin-left: 35px;
+}
+input[type="radio"] {
+  margin-right: 14px;
+}
+.continue {
+  display: block;
+  margin-top: 57px;
+  margin-left: 90px;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

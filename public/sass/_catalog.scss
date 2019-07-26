@@ -1,0 +1,314 @@
+.currentCatalg {
+  height: 148px;
+  background-color: #f8f3f4;
+}
+.catalogPath {
+  @extend .flex_between;
+  height: 100%;
+  align-items: center;
+}
+.currentLocation {
+  width: 176px;
+  height: 18px;
+  color: $colorEtiam;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.path {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #f8f3f4;
+}
+.path a {
+  color: #636363;
+}
+.path li:last-child a{
+  color: red;
+}
+.filter {
+  margin-top: 60px;
+}
+.filters {
+  @extend .flex_between;
+}
+.filterLeft {
+  width: 243px;
+  z-index: 100;
+}
+.filterLeftPosition {
+  position: absolute;
+}
+.filterLeft span { 
+  color: $colorEtiam;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-left: 3px solid $colorEtiam;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.filterLeft ul {
+  margin-bottom: 30px;
+}
+.filterLeft ul li a{
+  padding-left: 10px;
+  width: 138px;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+}
+.categoryOpen, .brandOpen, .designerOpen {
+  display: none;  
+}
+.categoryClick, .brandClick, .designerClick:hover {
+  cursor: pointer;
+}
+.categoryClick, .brandClick, .designerClick {
+  img {
+    float: right;
+    margin-left:100px; 
+    margin-top: 7px;
+  }
+}
+.categoryClick:hover {
+  .categoryOpen {
+    display: flex;
+  }
+  img {
+    transform: rotate(180deg);
+  }
+}
+.brandClick:hover {
+  .brandOpen {
+    display: flex;
+  }
+  img {
+    transform: rotate(180deg);
+  }
+}
+.designerClick:hover {
+  .designerOpen {
+    display: flex;
+  }
+  img {
+    transform: rotate(180deg);
+  }
+}
+.filterTop {
+  height: 165px;
+  width: 848px;
+}
+.filterTop__top {
+  @extend .flex_between;
+}
+.trendingNow, .size, .price p {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.trendingNowA, .sizeA {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 74px;
+  margin-top: 15px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    padding-right: 7px;
+  }
+  a {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+.trendingNow {
+  width: 200px;
+}
+.size {
+  width: 260px;
+  a {
+    margin: 0 20px;
+  }
+}
+.priceOutput {
+  padding-top: 15px;
+  color: #6f6e6e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.filterTop__bottom {
+  display: flex;
+  height: 50px;
+  background-color: #f3f3f3;
+}
+.sortBy, .show {
+  width: 153px;
+  height: 28px;
+  display: flex;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  overflow: hidden;
+  select {
+    border: 0;
+    padding-left: 20px;
+    height: 28px;
+  }
+}
+.show {
+  padding-left: 22px;
+}
+/*Стирание стоковых стилей rande*/
+input[type=range] {
+  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  width: 100%; /* Указание параметра ширины требуется для Firefox. */
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+}
+/*---Ползунок-------*/
+@mixin rangPriceThumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 13px;
+  background: $colorEtiam;
+  cursor: pointer;
+}
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @include rangPriceThumb;
+  margin-top: -5px;
+}
+/* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+  @include rangPriceThumb;
+}
+/* Тоже самое для IE */
+input[type=range]::-ms-thumb {
+  @include rangPriceThumb;
+}
+@mixin rangPriceTrack {
+  width: 262px;
+  height: 6px;
+  cursor: pointer;
+  background: $colorEtiam;
+  border-radius: 6px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  @include rangPriceTrack;
+}
+
+input[type=range]::-moz-range-track {
+  @include rangPriceTrack;
+}
+
+input[type=range]::-ms-track {
+  @include rangPriceTrack;
+  height: 20px;
+  background: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  @include rangPriceTrack;
+}
+
+input[type=range]::-ms-fill-upper {
+  @include rangPriceTrack;
+}
+.catalog__rirht {
+  margin-top: 48px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  .product {
+    margin-left: 30px;
+    padding-bottom: 55px;
+  }
+}
+.containerList {
+  @extend .flex_between;
+  align-items: center;
+  height: 100%;
+}
+.listNumber ul{
+  display: flex;
+  color: #c4c4c4;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  width: 261px;
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  margin-left: 290px;
+  li {
+    padding-right: 15px;
+  }
+  li:nth-child(2) {
+    color: $colorEtiam;
+  }
+  li:hover {
+    color: $colorEtiam;
+    cursor: pointer;
+  }
+}
+.list__right .button {
+  background: #fff;
+  color: $colorEtiam;
+  outline: 2px solid $colorEtiam;
+  padding: 12px 46px; 
+}
+.list__right .button:hover {
+  background: $colorEtiam;
+  color: #fff;
+  box-shadow: none;
+}
+.bannerLine {
+  height: 341px;
+  background-color: #222224;
+  margin-top: 110px;
+}
+.bannerLineFlex {
+  @extend .flex_between;
+  height: 100%;
+  align-items: center;
+}
+.bannerLineInfo {
+  width: 320px;
+  text-align: center;
+  img {
+    margin-bottom: 23px;
+  }
+}

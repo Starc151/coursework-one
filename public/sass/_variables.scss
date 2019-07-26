@@ -1,0 +1,54 @@
+$maxWidth: 1140px;
+$colorEtiam: #f16d7f;
+$colorFontMain: #222222;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  background-color: $colorEtiam;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px 19px;
+  letter-spacing: 0.38px;
+  cursor: pointer;
+  transition:all .5s;
+  text-align: center;
+  &:hover {
+  box-shadow: 0 0 15px $colorEtiam;
+  background-color: #fff;
+  color: $colorEtiam;
+  }
+}
+select {
+  color: #bcbcbc;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.pointer {
+  cursor: pointer;
+}

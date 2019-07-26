@@ -1,0 +1,261 @@
+.promo {
+  height: 613px;
+  background-color: #e8e8e8;
+}
+.promoContent {
+  background: url(../img/promo.jpg) 0 -51px;
+  height: 100%;
+}
+.promo__text {
+  border-left: 12px solid $colorEtiam;
+  margin-top: 224px;
+  float: left;
+  padding-left: 12px;
+}
+.promo__brand {
+  color: $colorFontMain;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 45px;
+  margin-bottom: 19px;
+}
+.promo__lux {
+  color: $colorFontMain;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 31px;
+}
+.fashion {
+  color: $colorEtiam;
+}
+.forContent {
+  @extend .flex_between;
+  flex-wrap: wrap;
+}
+.for__left, .for__right {
+  margin: 98px auto 0;
+}
+.for__men, .for__women, .for__kids, .for__accesories {
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    display: block;
+    z-index: -20;
+    transition: transform 0.5s;
+  }
+  &:hover img {
+    transform: scale(1.2, 1.2);
+  }
+}
+.for__men {
+  width: 560px;
+  height: 542px;
+  margin-bottom: 20px;
+  &:hover img {
+    transform: scale(1.2, 1.2) translateX(-25px);
+  }
+}
+.for__accesories {
+  width: 560px;
+  height: 240px;
+}
+.for__women {
+  width: 560px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+.for__kids {
+  width: 560px;
+  height: 542px;
+}
+.for__details {
+  display: flex;
+  align-items: center;
+  height: 82px;
+  color: $colorFontMain;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  padding-top: 25px;
+  p {
+    padding: 10px 20px;
+    background-color: white;
+    span {
+      color: $colorEtiam;
+      font-size: 27px;
+      letter-spacing: 0.75px;
+    }
+  }
+}
+.containerFetured {
+  margin-top: 121px;
+  display: flex;
+  justify-content: center;
+}
+.fetured__p {
+  text-align: center;
+  color: $colorFontMain;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+.fetured__span {
+  text-align: center;
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.containerProducts {
+  margin-top: 60px;
+  @extend .flex_center;
+  flex-wrap: wrap;
+}
+.product {
+  width: 261px;
+  height: 350px;
+  margin:0 auto 100px;
+  position: relative;
+  text-decoration: none;
+}
+.productAdd {
+  display: none;
+  width: 123px;
+  height: 39px;
+  line-height: 39px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 98px;
+  left: 70px;
+  transition: .2s;
+  div {
+    margin-left: 8px;
+  }
+}
+.promo__img {
+  overflow: hidden;
+  text-align: center;
+  transition: filter 0.5s;
+  img {
+    transition: transform 0.5s;
+  }
+}
+.product:hover .productAdd {
+  display: flex;
+  justify-content: center;
+}
+.productAdd:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.product:hover {
+  .promo__img {
+    filter: brightness(40%);
+    img {
+      transform: scale(1.2, 1.2);
+    }
+  }
+}
+.productPrice {
+  p, span {
+    max-height: 100px;
+    overflow: auto;
+    color: $colorFontMain;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:15px 15px 0;
+  }
+  span {
+    color: $colorEtiam;
+    display: block;
+    padding-top:15px;
+  }
+}
+.browseAllProduct {
+  text-align: center;
+}
+.bannerContainer {
+  @extend .flex_between;
+  /*flex-wrap: wrap;*/
+  height: 529px;
+  margin-top: 132px;
+}
+.sale {
+  width: 767px;
+  height: 100%;
+  background: url(../img/saleHover.png), url(../img/sale.jpg);
+  .offer {
+    width: 293px;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 146px;
+    padding-left: 39px;
+
+    span:nth-child(1) {
+      color: $colorEtiam;
+    }
+  }
+  span:nth-child(2) {
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 39px;
+  }
+
+}
+.sale:hover {
+  background: url(../img/sale.jpg);
+}
+.amenities {
+  display: flex;
+  padding: 0 20px; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 373px;
+  height: 100%;
+  background-color: #222224;
+}
+.amenitiesRight {
+  display: flex;
+  width: 298px;
+  height: 105px;
+  margin: auto;
+}
+.amenitiesText {
+  margin-left: 33px;
+  color: #fbfbfb;
+  p {
+    width: 219px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  span {
+    height: 75px;
+    overflow: auto;
+    display: block;
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    text-align: left;
+  }
+}
+.subscribeQuote {
+  p {
+      height: 100px;
+    overflow: auto;
+  }
+}
