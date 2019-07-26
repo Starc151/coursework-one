@@ -859,12 +859,12 @@ footer {
 .show {
   padding-left: 22px; }
 
-/*╨б╤В╨╕╤А╨░╨╜╨╕╨╡ ╤Б╤В╨╛╨║╨╛╨▓╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ rande*/
+/*Стирание стоковых стилей rande*/
 input[type=range] {
   -webkit-appearance: none;
-  /* ╨б╨║╤А╤Л╨▓╨░╨╡╤В ╤Б╨╗╨░╨╣╨┤╨╡╤А, ╤З╤В╨╛╨▒╤Л ╨╝╨╛╨╢╨╜╨╛ ╨▒╤Л╨╗╨╛ ╤Б╨╛╨╖╨┤╨░╤В╤М ╤Б╨▓╨╛╨╣ */
+  /* Скрывает слайдер, чтобы можно было создать свой */
   width: 100%;
-  /* ╨г╨║╨░╨╖╨░╨╜╨╕╨╡ ╨┐╨░╤А╨░╨╝╨╡╤В╤А╨░ ╤И╨╕╤А╨╕╨╜╤Л ╤В╤А╨╡╨▒╤Г╨╡╤В╤Б╤П ╨┤╨╗╤П Firefox. */ }
+  /* Указание параметра ширины требуется для Firefox. */ }
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none; }
@@ -876,12 +876,12 @@ input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
   background: transparent;
-  /* ╨б╨║╤А╤Л╨▓╨░╨╡╤В ╤Б╨╗╨░╨╣╨┤╨╡╤А, ╤З╤В╨╛╨▒╤Л ╨╝╨╛╨╢╨╜╨╛ ╨▒╤Л╨╗╨╛ ╨┤╨╛╨▒╨░╨▓╨╕╤В╤М ╤Б╨╛╨▒╤Б╤В╨▓╨╡╨╜╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕. */
+  /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
   border-color: transparent;
   color: transparent; }
 
-/*---╨Я╨╛╨╗╨╖╤Г╨╜╨╛╨║-------*/
-/* ╨б╨┐╨╡╤Ж╨╕╨░╨╗╤М╨╜╤Л╨╡ ╨┐╤А╨░╨▓╨╕╨╗╨░ ╨┤╨╗╤П ╨▒╤А╨░╤Г╨╖╨╡╤А╨╛╨▓ ╨╜╨░ ╨┤╨▓╨╕╨╢╨║╨░╤Е WebKit/Blink */
+/*---Ползунок-------*/
+/* Специальные правила для браузеров на движках WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 14px;
@@ -891,7 +891,7 @@ input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
   margin-top: -5px; }
 
-/* ╨в╨╛╨╢╨╡ ╤Б╨░╨╝╨╛╨╡ ╨┤╨╗╤П Firefox */
+/* Тоже самое для Firefox */
 input[type=range]::-moz-range-thumb {
   height: 14px;
   width: 14px;
@@ -899,7 +899,7 @@ input[type=range]::-moz-range-thumb {
   background: #f16d7f;
   cursor: pointer; }
 
-/* ╨в╨╛╨╢╨╡ ╤Б╨░╨╝╨╛╨╡ ╨┤╨╗╤П IE */
+/* Тоже самое для IE */
 input[type=range]::-ms-thumb {
   height: 14px;
   width: 14px;
