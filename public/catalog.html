@@ -8,580 +8,584 @@
     <link rel="stylesheet" href="./style/style.css">
   </head>
   <body>
-    <header>
-      <div class="container headerFlex">
-        <div class="header__left">
-          <a class="logo" href="index.html">
-            <img src="img/logo.svg" alt="logo">BRAN<span class="logoD">D</span>
-          </a>
-          <div class="browse">
-            <div>
-              Browse <img src="img/triangleBlack.png" alt="Click">
-              <nav class="browseNav">
+    <div id="app">
+      <header>
+        <div class="container headerFlex">
+          <div class="header__left">
+            <a class="logo" href="index.html">
+              <img src="img/logo.svg" alt="logo">BRAN<span class="logoD">D</span>
+            </a>
+            <div class="browse">
+              <div>
+                Browse <img src="img/triangleBlack.png" alt="Click">
+                <nav class="browseNav">
+                  <div class="blockHide"></div>
+                  <div class="blockBorder">
+                    <ul>
+                      <li><a href="catalog.html">WOMEN</a></li>
+                      <li><a href="catalog.html"> Dresses</a></li>
+                      <li><a href="catalog.html">Tops</a></li>
+                      <li><a href="catalog.html">Sweaters/Knits</a></li>
+                      <li><a href="catalog.html">Jackets/Coats</a></li>
+                      <li><a href="catalog.html">Blazers</a></li>
+                      <li><a href="catalog.html">Denim</a></li>
+                      <li><a href="catalog.html">Leggings/Pants</a></li>
+                      <li><a href="catalog.html">Skirts/Shorts</a></li>
+                      <li><a href="catalog.html">Accessories</a></li>
+                      <li><a href="catalog.html">Bags/Purses</a></li>
+                      <li><a href="catalog.html">Swimwear/Underwear</a></li>
+                      <li><a href="catalog.html">Nightwear</a></li>
+                      <li><a href="catalog.html">Shoes</a></li>
+                      <li><a href="catalog.html">Beauty</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="catalog.html">MEN</a></li>
+                      <li><a href="catalog.html">Tees/Tank tops</a></li>
+                      <li><a href="catalog.html">Shirts/Polos</a></li>
+                      <li><a href="catalog.html">Sweaters</a></li>
+                      <li><a href="catalog.html">Sweatshirts/Hoodies</a></li>
+                      <li><a href="catalog.html">Blazers</a></li>
+                      <li><a href="catalog.html">Jackets/vests</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <form class="search">
+              <input type="text" placeholder="Search for Item...">
+              <input type="submit" value=" ">
+            </form>
+          </div>
+          <div class="header__right">
+            <div class="cartClick">
+              <a href="cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
+              <div class="cartOpen">
                 <div class="blockHide"></div>
                 <div class="blockBorder">
-                  <ul>
-                    <li><a href="catalog.html">WOMEN</a></li>
-                    <li><a href="catalog.html"> Dresses</a></li>
-                    <li><a href="catalog.html">Tops</a></li>
-                    <li><a href="catalog.html">Sweaters/Knits</a></li>
-                    <li><a href="catalog.html">Jackets/Coats</a></li>
-                    <li><a href="catalog.html">Blazers</a></li>
-                    <li><a href="catalog.html">Denim</a></li>
-                    <li><a href="catalog.html">Leggings/Pants</a></li>
-                    <li><a href="catalog.html">Skirts/Shorts</a></li>
-                    <li><a href="catalog.html">Accessories</a></li>
-                    <li><a href="catalog.html">Bags/Purses</a></li>
-                    <li><a href="catalog.html">Swimwear/Underwear</a></li>
-                    <li><a href="catalog.html">Nightwear</a></li>
-                    <li><a href="catalog.html">Shoes</a></li>
-                    <li><a href="catalog.html">Beauty</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="catalog.html">MEN</a></li>
-                    <li><a href="catalog.html">Tees/Tank tops</a></li>
-                    <li><a href="catalog.html">Shirts/Polos</a></li>
-                    <li><a href="catalog.html">Sweaters</a></li>
-                    <li><a href="catalog.html">Sweatshirts/Hoodies</a></li>
-                    <li><a href="catalog.html">Blazers</a></li>
-                    <li><a href="catalog.html">Jackets/vests</a></li>
-                  </ul>
+                  <div class="inCart">
+                    <a href="product.html">
+                      <img src="img/productInCart1.svg" alt="productInCart1">
+                    </a>
+                    <div class="productInCart">
+                      <a href="product.html"><p class="productName">Rebox Zane</p></a>
+                      <a href="#"><p class="rating"></p></a>
+                      <a href="#"><p class="totalProduct">1  x   $250</p></a>
+                    </div>
+                    <a href="#" class="deletFromCart">x</a>
+                  </div>
+                  <div class="inCart">
+                    <a href="product.html">
+                      <img src="img/productInCart2.svg" alt="productInCart2">
+                    </a>
+                    <div class="productInCart">
+                      <a href="product.html"><p class="productName">Rebox Zane</p></a>
+                      <a href="#"><p class="rating"></p></a>
+                      <a href="#"><p class="totalProduct">1  x   $250</p></a>
+                    </div>
+                    <a href="#" class="deletFromCart">x</a>
+                  </div>
+                  <div class="total"><div>TOTAL</div><div>$500.00</div></div>
+                  <a href="checkout.html"><div class="checkoutCart">CHECKOUT</div></a>
+                  <div class="toCart"><a href="cart.html">GO TO CART</a></div>
                 </div>
-              </nav>
+              </div>
             </div>
+            <a href="checkout.html" class="button">My Account</a>
           </div>
-          <form class="search">
-            <input type="text" placeholder="Search for Item...">
-            <input type="submit" value=" ">
-          </form>
         </div>
-        <div class="header__right">
-          <div class="cartClick">
-            <a href="cart.html"><img class="cart" src="img/cart.svg" alt="cart"></a>
-            <div class="cartOpen">
-              <div class="blockHide"></div>
-              <div class="blockBorder">
-                <div class="inCart">
-                  <a href="product.html">
-                    <img src="img/productInCart1.svg" alt="productInCart1">
-                  </a>
-                  <div class="productInCart">
-                    <a href="product.html"><p class="productName">Rebox Zane</p></a>
-                    <a href="#"><p class="rating"></p></a>
-                    <a href="#"><p class="totalProduct">1  x   $250</p></a>
-                  </div>
-                  <a href="#" class="deletFromCart">x</a>
-                </div>
-                <div class="inCart">
-                  <a href="product.html">
-                    <img src="img/productInCart2.svg" alt="productInCart2">
-                  </a>
-                  <div class="productInCart">
-                    <a href="product.html"><p class="productName">Rebox Zane</p></a>
-                    <a href="#"><p class="rating"></p></a>
-                    <a href="#"><p class="totalProduct">1  x   $250</p></a>
-                  </div>
-                  <a href="#" class="deletFromCart">x</a>
-                </div>
-                <div class="total"><div>TOTAL</div><div>$500.00</div></div>
-                <a href="checkout.html"><div class="checkoutCart">CHECKOUT</div></a>
-                <div class="toCart"><a href="cart.html">GO TO CART</a></div>
+      </header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="menu__link">Home</a></li>
+          <li><a href="catalog.html" class="menu__link">Man</a></li>
+          <li class="menuList">
+            <a href="catalog.html" class="menu__link">Women</a>
+            <div class="menuOpen">
+              <div class="menuOpenDiv">
+                <h3><a href="catalog.html">Women</a></h3>
+                <ul>
+                  <li><a href="catalog.html">Dresses</a></li>
+                  <li><a href="catalog.html">Tops</a></li>
+                  <li><a href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a href="catalog.html">Jackets/Coats</a></li>
+                  <li><a href="catalog.html">Blazers</a></li>
+                  <li><a href="catalog.html">Denim</a></li>
+                  <li><a href="catalog.html">Leggings/Pants</a></li>
+                  <li><a href="catalog.html">Skirts/Shorts</a></li>
+                  <li><a href="catalog.html">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="menuOpenDiv">
+                <h3><a href="catalog.html">Women</a></h3>
+                <ul>
+                  <li><a href="catalog.html">Dresses</a></li>
+                  <li><a href="catalog.html">Tops</a></li>
+                  <li><a href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+                <h3><a href="catalog.html">Women</a></h3>
+                <ul>
+                  <li><a href="catalog.html">Dresses</a></li>
+                  <li><a href="catalog.html">Tops</a></li>
+                  <li><a href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+              </div>
+              <div class="menuOpenDiv">
+                <h3><a href="catalog.html">Women</a></h3>
+                <ul>
+                  <li><a href="catalog.html">Dresses</a></li>
+                  <li><a href="catalog.html">Tops</a></li>
+                  <li><a href="catalog.html">Sweaters/Knits</a></li>
+                  <li><a href="catalog.html">Jackets/Coats</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="catalog.html" class="menu__link">Kids</a></li>
+          <li><a href="catalog.html" class="menu__link">Accoseriese</a></li>
+          <li><a href="catalog.html" class="menu__link">Featured</a></li>
+          <li><a href="catalog.html" class="menu__link">Hot Deals</a></li>
+        </ul>
+      </nav>
+      <section class="currentCatalg">
+        <div class="container catalogPath">
+          <div class="currentLocation">NEW ARRIVALS</div>
+          <nav>
+            <ul class="path">
+              <li><a href="index.html">HOME / </a></li>
+              <li><a href="catalog.html">MEN / </a></li>
+              <li><a href="cart.html">NEW ARRIVALS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="filter">
+        <div class="container filters">
+          <div class="filterLeft">
+            <div class="filterLeftPosition">
+              <div class="categoryClick">
+                <span>CATEGORY</span>
+                <img src="img/trianglePink.png" alt="Click">
+                <nav class="categoryOpen">
+                  <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a href="#">Jackets & Coats</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Polos</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Sweaters & Knits</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Tanks</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="brandClick">
+                <span>BRAND</span>
+                <img src="img/trianglePink.png" alt="Click">
+                <nav class="brandOpen">
+                  <ul>
+                    <li><a href="#">Brand1</a></li>
+                    <li><a href="#">Brand2</a></li>
+                    <li><a href="#">Brand3</a></li>
+                    <li><a href="#">Brand4</a></li>
+                    <li><a href="#">Brand5</a></li>
+                    <li><a href="#">Brand6</a></li>
+                    <li><a href="#">Brand7</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="designerClick">
+                <span>DESIGNER</span>
+                <img src="img/trianglePink.png" alt="Click">
+                <nav class="designerOpen">
+                  <ul>
+                    <li><a href="#">Designer1</a></li>
+                    <li><a href="#">Designer2</a></li>
+                    <li><a href="#">Designer3</a></li>
+                    <li><a href="#">Designer4</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
-          <a href="checkout.html" class="button">My Account</a>
+          <div class="filterTop">
+            <div class="filterTop__top">
+              <div class="trendingNow">
+                <p>TRANDING NOW</p>
+                <nav class="trendingNowA">
+                  <ul>
+                    <li><a href="#">Bohemian</a></li>
+                    <li><a href="#">Floral</a></li>
+                    <li><a href="#">Lace</a></li>
+                    <li><a href="#">Floral</a></li>
+                    <li><a href="#">Lace</a></li>
+                    <li><a href="#">Bohemian</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="size">
+                <p>SIZE</p>
+                <nav class="sizeA">
+                  <ul>
+                    <li><a href="#">XXS</a></li>
+                    <li><a href="#">XS</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">XL</a></li>
+                    <li><a href="#">XXL</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="price">
+                <p>PRICE</p>
+                <form oninput="level.value = flevel.valueAsNumber">
+                  <input name="flevel" id="flying" type="range" min="10" max="400" value="100" step="1"> 
+                  <div class="priceOutput"><output for="flying" name="level">100</output></div>
+                </form>
+              </div>
+            </div>
+            <div class="filterTop__bottom">
+              <div class="sortBy">
+                Sort By:
+                <select>
+                  <option>Name</option>
+                  <option>Price</option>
+                  <option>Rating</option>
+                </select>
+              </div>
+              <div class="show">
+                Show:
+                <select>
+                  <option>03</option>
+                  <option>06</option>
+                  <option>09</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html" class="menu__link">Home</a></li>
-        <li><a href="catalog.html" class="menu__link">Man</a></li>
-        <li class="menuList">
-          <a href="catalog.html" class="menu__link">Women</a>
-          <div class="menuOpen">
-            <div class="menuOpenDiv">
-              <h3><a href="catalog.html">Women</a></h3>
+      </section>
+      <section class="catalog">
+        <div class="container catalog__rirht">
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen1.jpg" alt="productMen1">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen2.jpg" alt="productMen2">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen3.jpg" alt="productMen3">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen4.jpg" alt="productMen4">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen5.jpg" alt="productMen5">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen6.jpg" alt="productMen6">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen7.jpg" alt="productMen7">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen8.jpg" alt="productMen8">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+          <div class="product">
+            <a href="product.html">
+              <div class="promo__img">
+                <img src="img/productMen9.jpg" alt="productMen9">
+              </div>
+              <div class="productPrice">
+                <p>MANGO PEOPLE T-SHIRT<br>
+                  <span>$52.00</span>
+                </p>
+              </div>
+            </a>
+            <a href="cart.html" class="productAdd">
+              <img src="img/addCart.svg" alt="addCart">
+              <div>Add to Cart</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container containerList">
+          <div class="list__left">
+            <div class="listNumber">
               <ul>
-                <li><a href="catalog.html">Dresses</a></li>
-                <li><a href="catalog.html">Tops</a></li>
-                <li><a href="catalog.html">Sweaters/Knits</a></li>
-                <li><a href="catalog.html">Jackets/Coats</a></li>
-                <li><a href="catalog.html">Blazers</a></li>
-                <li><a href="catalog.html">Denim</a></li>
-                <li><a href="catalog.html">Leggings/Pants</a></li>
-                <li><a href="catalog.html">Skirts/Shorts</a></li>
-                <li><a href="catalog.html">Accessories</a></li>
+                <li>&lt;</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>...</li>
+                <li>20</li>
+                <li>&gt;</li>
               </ul>
             </div>
-            <div class="menuOpenDiv">
-              <h3><a href="catalog.html">Women</a></h3>
+          </div>
+          <div class="list__right">
+            <a href="catalog.html" class="button">View All</a>
+          </div>
+        </div> 
+      </section>
+      <section class="bannerLine">
+        <div class="container bannerLineFlex">
+          <div class="bannerLineInfo">
+            <div class="amenitiesImg">
+              <a href="404.html"><img src="img/delivery.svg" alt="delivery"></a>
+            </div>
+            <a href="404.html">
+              <div class="amenitiesText">
+                <p>Free Delivery</p>
+                <span>Worldwide delivery on all. Authorit tively morph 
+                  next-generation innov tion with extensive models.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="bannerLineInfo">
+            <div class="amenitiesImg">
+              <a href="404.html"><img src="img/discounts.svg" alt="delivery"></a>
+            </div>
+            <a href="404.html">
+              <div class="amenitiesText">
+                <p>Sales & discounts</p>
+                <span>Worldwide delivery on all. Authorit tively morph 
+                  next-generation innov tion with extensive models.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="bannerLineInfo">
+            <div class="amenitiesImg">
+              <a href="404.html"><img src="img/assurance.svg" alt="delivery"></a>
+            </div>
+            <a href="404.html">
+              <div class="amenitiesText">
+                <p>Quality assurance</p>
+                <span>Worldwide delivery on all. Authorit tively morph 
+                  next-generation innov tion with extensive models.
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container subscribeFlex">
+          <div class="subscribe__left">
+            <figure class="subscribeQuote">
+              <img src="img/portrait.svg">
+              <figcaption>
+                &rdquo;Vestibulum quis porttitor dui! Quisque viverra
+                nunc mi, a pulvinar purus condimentum a.
+                Aliquam condimentum mattis neque sed pretium&rdquo;
+              </figcaption>
+            </figure>
+            <div class="signature">
+              <p>Bin Burhan</p>
+              <span>Dhaka, Bd</span>  
+            </div>
+          </div>
+          <div class="subscribe__right">
+            <div class="subscribText">
+              <p>SUBSCRIBE</p>
+              <span>FOR OUR NEWLETTER AND PROMOTION</span>
+            </div>
+            <form class="subscribeForm" action="#">
+              <input type="email" class="mail" placeholder="Enter Your Email">
+              <input type="submit" class="button" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container aboutMain">
+          <div class="aboutText">
+            <a class="logo" href="index.html">
+              <img src="img/logo.svg" alt="logo">BRAN<span class="logoD">D</span>
+            </a>
+            <p>
+              Objectively transition extensive data rather than cross 
+              functional solutions. Monotonectally syndicate multidisciplinary
+              materials before go forward benefits. Intrinsicly syndicate an
+              expanded array of processes and cross-unit partnerships.
+            </p>
+            <p>
+              Efficiently plagiarize 24/365 action items and focused
+              infomediaries. Distinctively seize superior initiatives for
+              wireless technologies. Dynamically optimize.
+            </p>
+          </div>
+          <div class="company">
+            <p>COMPANY</p>
+            <nav class="companyNav">
               <ul>
-                <li><a href="catalog.html">Dresses</a></li>
-                <li><a href="catalog.html">Tops</a></li>
-                <li><a href="catalog.html">Sweaters/Knits</a></li>
-                <li><a href="catalog.html">Jackets/Coats</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Shop</a></li>
+                <li><a href="404.html">About</a></li>
+                <li><a href="404.html">How It Works</a></li>
+                <li><a href="404.html">Contact</a></li>
               </ul>
-              <h3><a href="catalog.html">Women</a></h3>
+            </nav>
+          </div>
+          <div class="information">
+            <p>INFORMATION</p>
+            <nav class="informationNav">
               <ul>
-                <li><a href="catalog.html">Dresses</a></li>
-                <li><a href="catalog.html">Tops</a></li>
-                <li><a href="catalog.html">Sweaters/Knits</a></li>
-                <li><a href="catalog.html">Jackets/Coats</a></li>
+                <li><a href="404.html">Tearms & Condition</a></li>
+                <li><a href="404.html">Privacy Policy</a></li>
+                <li><a href="404.html">How to Buy</a></li>
+                <li><a href="404.html">How to Sell</a></li>
+                <li><a href="404.html">Promotion</a></li>
               </ul>
-            </div>
-            <div class="menuOpenDiv">
-              <h3><a href="catalog.html">Women</a></h3>
+            </nav>
+          </div>
+          <div class="shopCategories">
+            <p>SHOP CATEGORY</p>
+            <nav class="shopCategoriesNav">
               <ul>
-                <li><a href="catalog.html">Dresses</a></li>
-                <li><a href="catalog.html">Tops</a></li>
-                <li><a href="catalog.html">Sweaters/Knits</a></li>
-                <li><a href="catalog.html">Jackets/Coats</a></li>
+                <li><a href="catalog.html">Men</a></li>
+                <li><a href="catalog.html">Women</a></li>
+                <li><a href="catalog.html">Child</a></li>
+                <li><a href="catalog.html">Apparel</a></li>
+                <li><a href="catalog.html">Brows All</a></li>
               </ul>
-            </div>
-          </div>
-        </li>
-        <li><a href="catalog.html" class="menu__link">Kids</a></li>
-        <li><a href="catalog.html" class="menu__link">Accoseriese</a></li>
-        <li><a href="catalog.html" class="menu__link">Featured</a></li>
-        <li><a href="catalog.html" class="menu__link">Hot Deals</a></li>
-      </ul>
-    </nav>
-    <section class="currentCatalg">
-      <div class="container catalogPath">
-        <div class="currentLocation">NEW ARRIVALS</div>
-        <nav>
-          <ul class="path">
-            <li><a href="index.html">HOME / </a></li>
-            <li><a href="catalog.html">MEN / </a></li>
-            <li><a href="cart.html">NEW ARRIVALS</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <section class="filter">
-      <div class="container filters">
-        <div class="filterLeft">
-          <div class="filterLeftPosition">
-            <div class="categoryClick">
-              <span>CATEGORY</span>
-              <img src="img/trianglePink.png" alt="Click">
-              <nav class="categoryOpen">
-                <ul>
-                  <li><a href="#">Accessories</a></li>
-                  <li><a href="#">Bags</a></li>
-                  <li><a href="#">Denim</a></li>
-                  <li><a href="#">Hoodies & Sweatshirts</a></li>
-                  <li><a href="#">Jackets & Coats</a></li>
-                  <li><a href="#">Pants</a></li>
-                  <li><a href="#">Polos</a></li>
-                  <li><a href="#">Shirts</a></li>
-                  <li><a href="#">Shoes</a></li>
-                  <li><a href="#">Shorts</a></li>
-                  <li><a href="#">Sweaters & Knits</a></li>
-                  <li><a href="#">T-Shirts</a></li>
-                  <li><a href="#">Tanks</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="brandClick">
-              <span>BRAND</span>
-              <img src="img/trianglePink.png" alt="Click">
-              <nav class="brandOpen">
-                <ul>
-                  <li><a href="#">Brand1</a></li>
-                  <li><a href="#">Brand2</a></li>
-                  <li><a href="#">Brand3</a></li>
-                  <li><a href="#">Brand4</a></li>
-                  <li><a href="#">Brand5</a></li>
-                  <li><a href="#">Brand6</a></li>
-                  <li><a href="#">Brand7</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="designerClick">
-              <span>DESIGNER</span>
-              <img src="img/trianglePink.png" alt="Click">
-              <nav class="designerOpen">
-                <ul>
-                  <li><a href="#">Designer1</a></li>
-                  <li><a href="#">Designer2</a></li>
-                  <li><a href="#">Designer3</a></li>
-                  <li><a href="#">Designer4</a></li>
-                </ul>
-              </nav>
-            </div>
+            </nav>
           </div>
         </div>
-        <div class="filterTop">
-          <div class="filterTop__top">
-            <div class="trendingNow">
-              <p>TRANDING NOW</p>
-              <nav class="trendingNowA">
-                <ul>
-                  <li><a href="#">Bohemian</a></li>
-                  <li><a href="#">Floral</a></li>
-                  <li><a href="#">Lace</a></li>
-                  <li><a href="#">Floral</a></li>
-                  <li><a href="#">Lace</a></li>
-                  <li><a href="#">Bohemian</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="size">
-              <p>SIZE</p>
-              <nav class="sizeA">
-                <ul>
-                  <li><a href="#">XXS</a></li>
-                  <li><a href="#">XS</a></li>
-                  <li><a href="#">S</a></li>
-                  <li><a href="#">M</a></li>
-                  <li><a href="#">L</a></li>
-                  <li><a href="#">XL</a></li>
-                  <li><a href="#">XXL</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="price">
-              <p>PRICE</p>
-              <form oninput="level.value = flevel.valueAsNumber">
-                <input name="flevel" id="flying" type="range" min="10" max="400" value="100" step="1"> 
-                <div class="priceOutput"><output for="flying" name="level">100</output></div>
-              </form>
-            </div>
+      </section>
+      <footer>
+        <div class="container containerFooter">
+          <div class="footer__left">
+            <p>&copy; 2019  Brand  All Rights Reserved.</p>
           </div>
-          <div class="filterTop__bottom">
-            <div class="sortBy">
-              Sort By:
-              <select>
-                <option>Name</option>
-                <option>Price</option>
-                <option>Rating</option>
-              </select>
-            </div>
-            <div class="show">
-              Show:
-              <select>
-                <option>03</option>
-                <option>06</option>
-                <option>09</option>
-              </select>
-            </div>
+          <div class="footer__right">
+            <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.cn/uas/login"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.pinterest.ru/"><i class="fab fa-pinterest-p"></i></a>
+            <a target="_blank" href="https://accounts.google.com"><i class="fab fa-google-plus-g"></i></a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="catalog">
-      <div class="container catalog__rirht">
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen1.jpg" alt="productMen1">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen2.jpg" alt="productMen2">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen3.jpg" alt="productMen3">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen4.jpg" alt="productMen4">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen5.jpg" alt="productMen5">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen6.jpg" alt="productMen6">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen7.jpg" alt="productMen7">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen8.jpg" alt="productMen8">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="product.html">
-            <div class="promo__img">
-              <img src="img/productMen9.jpg" alt="productMen9">
-            </div>
-            <div class="productPrice">
-              <p>MANGO PEOPLE T-SHIRT<br>
-                <span>$52.00</span>
-              </p>
-            </div>
-          </a>
-          <a href="cart.html" class="productAdd">
-            <img src="img/addCart.svg" alt="addCart">
-            <div>Add to Cart</div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container containerList">
-        <div class="list__left">
-          <div class="listNumber">
-            <ul>
-              <li>&lt;</li>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-              <li>...</li>
-              <li>20</li>
-              <li>&gt;</li>
-            </ul>
-          </div>
-        </div>
-        <div class="list__right">
-          <a href="catalog.html" class="button">View All</a>
-        </div>
-      </div> 
-    </section>
-    <section class="bannerLine">
-      <div class="container bannerLineFlex">
-        <div class="bannerLineInfo">
-          <div class="amenitiesImg">
-            <a href="404.html"><img src="img/delivery.svg" alt="delivery"></a>
-          </div>
-          <a href="404.html">
-            <div class="amenitiesText">
-              <p>Free Delivery</p>
-              <span>Worldwide delivery on all. Authorit tively morph 
-                next-generation innov tion with extensive models.
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="bannerLineInfo">
-          <div class="amenitiesImg">
-            <a href="404.html"><img src="img/discounts.svg" alt="delivery"></a>
-          </div>
-          <a href="404.html">
-            <div class="amenitiesText">
-              <p>Sales & discounts</p>
-              <span>Worldwide delivery on all. Authorit tively morph 
-                next-generation innov tion with extensive models.
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="bannerLineInfo">
-          <div class="amenitiesImg">
-            <a href="404.html"><img src="img/assurance.svg" alt="delivery"></a>
-          </div>
-          <a href="404.html">
-            <div class="amenitiesText">
-              <p>Quality assurance</p>
-              <span>Worldwide delivery on all. Authorit tively morph 
-                next-generation innov tion with extensive models.
-              </span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="subscribe">
-      <div class="container subscribeFlex">
-        <div class="subscribe__left">
-          <figure class="subscribeQuote">
-            <img src="img/portrait.svg">
-            <figcaption>
-              &rdquo;Vestibulum quis porttitor dui! Quisque viverra
-              nunc mi, a pulvinar purus condimentum a.
-              Aliquam condimentum mattis neque sed pretium&rdquo;
-            </figcaption>
-          </figure>
-          <div class="signature">
-            <p>Bin Burhan</p>
-            <span>Dhaka, Bd</span>  
-          </div>
-        </div>
-        <div class="subscribe__right">
-          <div class="subscribText">
-            <p>SUBSCRIBE</p>
-            <span>FOR OUR NEWLETTER AND PROMOTION</span>
-          </div>
-          <form class="subscribeForm" action="#">
-            <input type="email" class="mail" placeholder="Enter Your Email">
-            <input type="submit" class="button" value="Subscribe">
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container aboutMain">
-        <div class="aboutText">
-          <a class="logo" href="index.html">
-            <img src="img/logo.svg" alt="logo">BRAN<span class="logoD">D</span>
-          </a>
-          <p>
-            Objectively transition extensive data rather than cross 
-            functional solutions. Monotonectally syndicate multidisciplinary
-            materials before go forward benefits. Intrinsicly syndicate an
-            expanded array of processes and cross-unit partnerships.
-          </p>
-          <p>
-            Efficiently plagiarize 24/365 action items and focused
-            infomediaries. Distinctively seize superior initiatives for
-            wireless technologies. Dynamically optimize.
-          </p>
-        </div>
-        <div class="company">
-          <p>COMPANY</p>
-          <nav class="companyNav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="catalog.html">Shop</a></li>
-              <li><a href="404.html">About</a></li>
-              <li><a href="404.html">How It Works</a></li>
-              <li><a href="404.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="information">
-          <p>INFORMATION</p>
-          <nav class="informationNav">
-            <ul>
-              <li><a href="404.html">Tearms & Condition</a></li>
-              <li><a href="404.html">Privacy Policy</a></li>
-              <li><a href="404.html">How to Buy</a></li>
-              <li><a href="404.html">How to Sell</a></li>
-              <li><a href="404.html">Promotion</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="shopCategories">
-          <p>SHOP CATEGORY</p>
-          <nav class="shopCategoriesNav">
-            <ul>
-              <li><a href="catalog.html">Men</a></li>
-              <li><a href="catalog.html">Women</a></li>
-              <li><a href="catalog.html">Child</a></li>
-              <li><a href="catalog.html">Apparel</a></li>
-              <li><a href="catalog.html">Brows All</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container containerFooter">
-        <div class="footer__left">
-          <p>&copy; 2019  Brand  All Rights Reserved.</p>
-        </div>
-        <div class="footer__right">
-          <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-          <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-          <a target="_blank" href="https://www.linkedin.cn/uas/login"><i class="fab fa-linkedin-in"></i></a>
-          <a target="_blank" href="https://www.pinterest.ru/"><i class="fab fa-pinterest-p"></i></a>
-          <a target="_blank" href="https://accounts.google.com"><i class="fab fa-google-plus-g"></i></a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="js/vue/main.js"></script>
   </body>
 </html>
