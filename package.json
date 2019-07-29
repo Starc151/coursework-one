@@ -1,0 +1,30 @@
+{
+  "name": "coursework-one",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Starc151/coursework-one.git"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Starc151/coursework-one/issues"
+  },
+  "homepage": "https://github.com/Starc151/coursework-one#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
