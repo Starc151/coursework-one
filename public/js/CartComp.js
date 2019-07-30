@@ -1,12 +1,20 @@
 Vue.component('cart', {
   data() {
     return {
-      showCart: false,
-      imgCart: 'https://placehold.it/50x100',
       cartItems: [],
+      totalPriceCart: 0
     }
   },
   methods: {
+    totalPrice() {
+      this.$parent.getJson(`/api/cart`)
+            .then(data => {
+              for (let el of data.contents) {
+                this.totalPriceCart += el.price * el.quantity;
+              }
+              return this.totalPriceCart;
+            });
+    },
     addProduct(product) {
       let find = this.cartItems.find(el => el.id_product === product.id_product);
       if (find) {
@@ -52,34 +60,30 @@ Vue.component('cart', {
               }
             });
   },
-  template: `<div>
-<button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
-<div class="cart-block" v-show="showCart">
-                <p v-if="!cartItems.length">Cart is empty</p>
+  template: `<div class="blockBorder">
                 <cart-item 
                 v-for="item of cartItems" 
                 :key="item.id_product"
                 :cart-item="item"
-                :img="imgCart"
                 @remove="remove"></cart-item>
-            </div>
-</div>`
+                <div v-if="!cartItems.length" class="total">Cart is empty</div>
+                <div v-else class="total">TOTAL <div>{{totalPrice()}}</div></div>
+                <a href="checkout.html"><div class="checkoutCart">CHECKOUT</div></a>
+                <div class="toCart"><a href="cart.html">GO TO CART</a></div>
+              </div>`
 });
 
 Vue.component('cart-item', {
-  props: ['cartItem', 'img'],
-  template: `<div class="cart-item" >
-                <div class="product-bio">
-                    <img :src="img" :alt="cartItem.product_name">
-                    <div class="product-desc">
-                        <p class="product-title">{{cartItem.product_name}}</p>
-                        <p class="product-quantity">Quantity: {{cartItem.quantity}}</p>
-                        <p class="product-single-price">$ {{cartItem.price}} each</p>
+  props: ['cartItem'],
+  template: `<div class="inCart">
+                    <a href="product.html">
+                      <img width = "72" :src="cartItem.img" :alt="cartItem.product_name">
+                    </a>
+                    <div class="productInCart">
+                      <a href="product.html"><p class="productName">{{cartItem.product_name}}</p></a>
+                      <a href="#"><p class="rating"></p></a>
+                      <a href="#"><p class="totalProduct">{{cartItem.quantity}}  x  \$ {{cartItem.quantity * cartItem.price}}</p></a>
                     </div>
-                </div>
-                <div class="right-block">
-                    <p class="product-price">$ {{cartItem.quantity*cartItem.price}}</p>
-                    <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
-                </div>
-            </div>`
+                    <a href="#" class="deletFromCart" @click="$emit('remove', cartItem)">x</a>
+                  </div>`
 });

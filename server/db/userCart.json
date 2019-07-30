@@ -1,18 +1,18 @@
 {
     "contents": [
         {
-            "quantity": 1,
+            "quantity": 8,
             "id_product": 2,
             "product_name": "Overcoat",
             "price": 301,
-            "img": "productMen2.jpg"
+            "img": "img/imgForCatalog/productMen2.jpg"
         },
         {
             "quantity": 1,
-            "id_product": 1,
-            "product_name": "Overcoat",
-            "price": 321,
-            "img": "productMen1.jpg"
+            "id_product": 5,
+            "product_name": "Sweater",
+            "price": 199,
+            "img": "img/imgForCatalog/productMen5.jpg"
         }
     ]
 }

@@ -3,54 +3,54 @@
     "id_product": 1,
     "product_name": "Overcoat",
     "price": 321,
-    "img": "productMen1.jpg"
+    "img": "img/imgForCatalog/productMen1.jpg"
   },
   {
     "id_product": 2,
     "product_name": "Overcoat",
     "price": 301,
-    "img": "productMen2.jpg"
+    "img": "img/imgForCatalog/productMen2.jpg"
   },
   {
     "id_product": 3,
     "product_name": "Windbreaker",
     "price": 202,
-    "img": "productMen3.jpg"
+    "img": "img/imgForCatalog/productMen3.jpg"
   },
   {
     "id_product": 4,
     "product_name": "T-short",
     "price": 58,
-    "img": "productMen4.jpg"
+    "img": "img/imgForCatalog/productMen4.jpg"
   },
   {
     "id_product": 5,
     "product_name": "Sweater",
     "price": 199,
-    "img": "productMen5.jpg"
+    "img": "img/imgForCatalog/productMen5.jpg"
   },
   {
     "id_product": 6,
     "product_name": "Windbreaker",
     "price": 180,
-    "img": "productMen6.jpg"
+    "img": "img/imgForCatalog/productMen6.jpg"
   },
   {
     "id_product": 7,
     "product_name": "Jacket",
     "price": 222,
-    "img": "productMen7.jpg"
+    "img": "img/imgForCatalog/productMen7.jpg"
   },
   {
     "id_product": 8,
     "product_name": "Overcoat",
     "price": 320,
-    "img": "productMen8.jpg"
+    "img": "img/imgForCatalog/productMen8.jpg"
   },
   {
     "id_product": 9,
     "product_name": "T-short",
     "price": 37,
-    "img": "productMen9.jpg"
+    "img": "img/imgForCatalog/productMen9.jpg"
   }
 ]

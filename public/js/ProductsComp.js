@@ -20,7 +20,7 @@ Vue.component('products', {
               }
             })
   },
-  template: `<div class="products">
+  template: `<div class="container catalog__rirht">
            <product 
            v-for="el of filtered" 
            :key="el.id_product"
@@ -29,12 +29,20 @@ Vue.component('products', {
 });
 
 Vue.component('product', {
-  props: ['product', 'img'],
-  template: ` <div class="product-item" >
-                <div class="desc">
-                    <h3>{{product.product_name}}</h3>
-                    <p>{{product.price}}</p>
-                    <button class="buy-btn" @click="$root.$refs.cart.addProduct(product)">Купить</button>
+  props: ['product'],
+  template: `<div class="product">
+              <a href="product.html">
+                <div class="promo__img">
+                  <img :src="product.img" :alt="product.product_name">
                 </div>
+                <div class="productPrice">
+                  <p>{{product.product_name}}</p>
+                  <span>\$ {{product.price}}</span>
+                </div>
+              </a>
+              <a href="#" class="productAdd" @click.prevent="$root.$refs.cart.addProduct(product)">
+                <img src="img/addCart.svg" alt="addCart">
+                <div>Add to Cart</div>
+              </a>
             </div>`
 })
