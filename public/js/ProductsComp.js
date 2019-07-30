@@ -20,7 +20,7 @@ Vue.component('products', {
               }
             })
   },
-  template: `<div class="container catalog__rirht">
+  template: `<div>
            <product 
            v-for="el of filtered" 
            :key="el.id_product"
