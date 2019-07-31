@@ -574,6 +574,8 @@ footer {
 .containerProducts {
   margin-top: 60px;
   flex-wrap: wrap; }
+  .containerProducts div.product:nth-of-type(9) {
+    display: none; }
 
 .product {
   width: 261px;
@@ -1256,6 +1258,8 @@ p.youMayLike {
 
 .containerProducts_margin {
   margin-bottom: -140px; }
+  .containerProducts_margin div.product:nth-of-type(2n) {
+    display: none; }
 
 .checkout {
   margin-top: 55px; }

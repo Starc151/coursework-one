@@ -114,6 +114,7 @@
   margin-top: 60px;
   @extend .flex_center;
   flex-wrap: wrap;
+  div.product:nth-of-type(9) {display: none;}
 }
 .product {
   width: 261px;
