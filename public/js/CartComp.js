@@ -6,15 +6,6 @@ Vue.component('cart', {
     }
   },
   methods: {
-    totalPrice() {
-      this.$parent.getJson(`/api/cart`)
-            .then(data => {
-              for (let el of data.contents) {
-                this.totalPriceCart += el.price * el.quantity;
-              }
-              return this.totalPriceCart;
-            });
-    },
     addProduct(product) {
       let find = this.cartItems.find(el => el.id_product === product.id_product);
       if (find) {

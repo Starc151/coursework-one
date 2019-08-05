@@ -1,6 +1,4 @@
 {
-    "amount": 46600,
-    "countGoods": 2,
     "contents": [
         {
             "quantity": 2,
@@ -10,11 +8,18 @@
             "img": "img/imgForCatalog/productMen2.jpg"
         },
         {
+            "quantity": 2,
+            "id_product": 3,
+            "product_name": "Windbreaker",
+            "price": 202,
+            "img": "img/imgForCatalog/productMen3.jpg"
+        },
+        {
             "quantity": 1,
-            "id_product": 1,
-            "product_name": "Overcoat",
-            "price": 321,
-            "img": "img/imgForCatalog/productMen1.jpg"
+            "id_product": 5,
+            "product_name": "Sweater",
+            "price": 199,
+            "img": "img/imgForCatalog/productMen5.jpg"
         }
     ]
 }

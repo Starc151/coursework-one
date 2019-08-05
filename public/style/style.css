@@ -215,7 +215,8 @@ header {
   border-radius: 25px;
   font-size: 10px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: background .5s; }
 
 .deletFromCart:hover {
   background: #f16d7f; }

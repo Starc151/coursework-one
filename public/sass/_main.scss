@@ -191,6 +191,7 @@ header {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
+  transition: background .5s;
   @extend .flex_center;
 }
 .deletFromCart:hover {
