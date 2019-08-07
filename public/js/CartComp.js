@@ -2,7 +2,15 @@ Vue.component('cart', {
   data() {
     return {
       cartItems: [],
-      totalPriceCart: 0
+    }
+  },
+  computed: {
+    totalPrice() {
+      totalPriceCart = 0;
+      for (let key  of this.cartItems.keys()) {
+        totalPriceCart += this.cartItems[key].price * this.cartItems[key].quantity;
+      }
+      return totalPriceCart;
     }
   },
   methods: {
@@ -58,7 +66,7 @@ Vue.component('cart', {
                 :cart-item="item"
                 @remove="remove"></cart-item>
                 <div v-if="!cartItems.length" class="total">Cart is empty</div>
-                <div v-else class="total">TOTAL <div>{{totalPrice()}}</div></div>
+                <div v-else class="total">TOTAL $<div>{{totalPrice}}</div></div>
                 <a href="checkout.html"><div class="checkoutCart">CHECKOUT</div></a>
                 <div class="toCart"><a href="cart.html">GO TO CART</a></div>
               </div>`

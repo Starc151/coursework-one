@@ -39,9 +39,9 @@ ul {
   transition:all .5s;
   text-align: center;
   &:hover {
-  box-shadow: 0 0 15px $colorEtiam;
-  background-color: #fff;
-  color: $colorEtiam;
+    box-shadow: 0 0 15px $colorEtiam;
+    background-color: #fff;
+    color: $colorEtiam;
   }
 }
 select {
