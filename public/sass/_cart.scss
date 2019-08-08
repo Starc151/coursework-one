@@ -1,8 +1,23 @@
 .myCartProduct {
   margin-top: 43px;
+  ul {
+    @extend .flex_between;
+    li:not(:first-child) {
+      height: 20px;
+      width: 77px;
+      text-align: center;
+      margin-top: 35px;
+      a {
+        text-align: right;
+      }
+    }
+    li:first-child {
+      width: 280px;
+    }
+    li:last-child {}
+  }
 }
 .myCartHead {
-  @extend .flex_between;
   margin-top: 90px;
   color: $colorFontMain;
   font-size: 13px;
@@ -10,65 +25,13 @@
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: -0.2px;
-}
-.myCartProductLeft {
-  min-width: 278px;
-}
-.productInMyCart {
-  display: flex;
-  align-content: space-between;
-  margin-bottom: 51px;
-}
-.productInMyCartText {
-  margin-left: 21px;
-  .productName {
-    margin-bottom: 38px;
-  }
-  a {
-    margin-top: 38px;
-    color: #575757;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    span {
-      color: #6f6e6e;
-    }
-  }
-}
-.myCartHeadRight {
   ul {
     @extend .flex_between;
-    width: 690px;
-    li {
-      width: 80px;
-      text-align: right;
+    li:not(:first-child) {
+      width: 77px;
     }
-  }
-}
-.myCartProduct {
-  @extend .flex_between;
-}
-.myCartProductRight {
-  color: #656565;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  ul {
-    @extend .flex_between;
-    align-items: center;
-    width: 690px;
-    height: 115px;
-    margin-bottom: 51px;
-    li {
-      width: 80px;
-      text-align: center;
-    }
-    a {
-      @extend .flex_center;
-      div {
-        margin-left: 30px;
-        @extend .flex_center;
-      }
+    li:first-child {
+      width: 280px;
     }
   }
 }
@@ -85,6 +48,7 @@
     height: 50px;
     border: 1px solid $colorEtiam;
     background-color: #fff;
+    transition: box-shadow .2s linear;
   }
   div:hover {
     box-shadow: 0 0 10px $colorEtiam;
