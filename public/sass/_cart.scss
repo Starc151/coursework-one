@@ -7,6 +7,10 @@
       width: 77px;
       text-align: center;
       margin-top: 35px;
+      color: #656565;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
       a {
         text-align: right;
       }
@@ -14,7 +18,32 @@
     li:first-child {
       width: 280px;
     }
-    li:last-child {}
+    li:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .productInMyCartText {
+    margin-left: 21px;
+    .productName {
+      margin-bottom: 38px;
+    }
+    a {
+      margin-top: 38px;
+      color: #575757;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      span {
+        color: #6f6e6e;
+      }
+    }
+  }
+  .productInMyCart {
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 51px;
   }
 }
 .myCartHead {
@@ -29,6 +58,8 @@
     @extend .flex_between;
     li:not(:first-child) {
       width: 77px;
+      display: flex;
+      justify-content: center;
     }
     li:first-child {
       width: 280px;

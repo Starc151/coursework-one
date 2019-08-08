@@ -466,6 +466,7 @@ footer {
     height: 32px;
     margin-left: 4px;
     background: #fff;
+    transition: background .2s linear, color .2s linear;
   }
   a:hover {
     background: $colorEtiam;

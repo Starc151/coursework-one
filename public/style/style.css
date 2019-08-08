@@ -461,7 +461,8 @@ footer {
     width: 32px;
     height: 32px;
     margin-left: 4px;
-    background: #fff; }
+    background: #fff;
+    transition: background .2s linear, color .2s linear; }
   .footer__right a:hover {
     background: #f16d7f;
     color: #fff; }
@@ -862,12 +863,12 @@ footer {
 .show {
   padding-left: 22px; }
 
-/*╨б╤В╨╕╤А╨░╨╜╨╕╨╡ ╤Б╤В╨╛╨║╨╛╨▓╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ rande*/
+/*Стирание стоковых стилей rande*/
 input[type=range] {
   -webkit-appearance: none;
-  /* ╨б╨║╤А╤Л╨▓╨░╨╡╤В ╤Б╨╗╨░╨╣╨┤╨╡╤А, ╤З╤В╨╛╨▒╤Л ╨╝╨╛╨╢╨╜╨╛ ╨▒╤Л╨╗╨╛ ╤Б╨╛╨╖╨┤╨░╤В╤М ╤Б╨▓╨╛╨╣ */
+  /* Скрывает слайдер, чтобы можно было создать свой */
   width: 100%;
-  /* ╨г╨║╨░╨╖╨░╨╜╨╕╨╡ ╨┐╨░╤А╨░╨╝╨╡╤В╤А╨░ ╤И╨╕╤А╨╕╨╜╤Л ╤В╤А╨╡╨▒╤Г╨╡╤В╤Б╤П ╨┤╨╗╤П Firefox. */ }
+  /* Указание параметра ширины требуется для Firefox. */ }
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none; }
@@ -879,12 +880,12 @@ input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
   background: transparent;
-  /* ╨б╨║╤А╤Л╨▓╨░╨╡╤В ╤Б╨╗╨░╨╣╨┤╨╡╤А, ╤З╤В╨╛╨▒╤Л ╨╝╨╛╨╢╨╜╨╛ ╨▒╤Л╨╗╨╛ ╨┤╨╛╨▒╨░╨▓╨╕╤В╤М ╤Б╨╛╨▒╤Б╤В╨▓╨╡╨╜╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕. */
+  /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
   border-color: transparent;
   color: transparent; }
 
-/*---╨Я╨╛╨╗╨╖╤Г╨╜╨╛╨║-------*/
-/* ╨б╨┐╨╡╤Ж╨╕╨░╨╗╤М╨╜╤Л╨╡ ╨┐╤А╨░╨▓╨╕╨╗╨░ ╨┤╨╗╤П ╨▒╤А╨░╤Г╨╖╨╡╤А╨╛╨▓ ╨╜╨░ ╨┤╨▓╨╕╨╢╨║╨░╤Е WebKit/Blink */
+/*---Ползунок-------*/
+/* Специальные правила для браузеров на движках WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 14px;
@@ -894,7 +895,7 @@ input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
   margin-top: -5px; }
 
-/* ╨в╨╛╨╢╨╡ ╤Б╨░╨╝╨╛╨╡ ╨┤╨╗╤П Firefox */
+/* Тоже самое для Firefox */
 input[type=range]::-moz-range-thumb {
   height: 14px;
   width: 14px;
@@ -902,7 +903,7 @@ input[type=range]::-moz-range-thumb {
   background: #f16d7f;
   cursor: pointer; }
 
-/* ╨в╨╛╨╢╨╡ ╤Б╨░╨╝╨╛╨╡ ╨┤╨╗╤П IE */
+/* Тоже самое для IE */
 input[type=range]::-ms-thumb {
   height: 14px;
   width: 14px;
@@ -1012,11 +1013,35 @@ input[type=range]::-ms-fill-upper {
     height: 20px;
     width: 77px;
     text-align: center;
-    margin-top: 35px; }
+    margin-top: 35px;
+    color: #656565;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; }
     .myCartProduct ul li:not(:first-child) a {
       text-align: right; }
   .myCartProduct ul li:first-child {
     width: 280px; }
+  .myCartProduct ul li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .myCartProduct .productInMyCartText {
+    margin-left: 21px; }
+    .myCartProduct .productInMyCartText .productName {
+      margin-bottom: 38px; }
+    .myCartProduct .productInMyCartText a {
+      margin-top: 38px;
+      color: #575757;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px; }
+      .myCartProduct .productInMyCartText a span {
+        color: #6f6e6e; }
+  .myCartProduct .productInMyCart {
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 51px; }
 
 .myCartHead {
   margin-top: 90px;
@@ -1027,7 +1052,9 @@ input[type=range]::-ms-fill-upper {
   text-transform: uppercase;
   letter-spacing: -0.2px; }
   .myCartHead ul li:not(:first-child) {
-    width: 77px; }
+    width: 77px;
+    display: flex;
+    justify-content: center; }
   .myCartHead ul li:first-child {
     width: 280px; }
 
