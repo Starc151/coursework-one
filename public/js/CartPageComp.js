@@ -1,4 +1,4 @@
-Vue.component('cartPage', {
+Vue.component('cartpage', {
   data() {
     return {
       cartItems: [],
@@ -59,30 +59,36 @@ Vue.component('cartPage', {
               }
             });
   },
-  template: `<div class="blockBorder">
+  template: `<div class="cartForVue">
                 <cart-item 
                 v-for="item of cartItems" 
                 :key="item.id_product"
                 :cart-item="item"
                 @remove="remove"></cart-item>
-                <div v-if="!cartItems.length" class="total">Cart is empty</div>
-                <div v-else class="total">TOTAL $<div>{{totalPrice}}</div></div>
-                <a href="checkout.html"><div class="checkoutCart">CHECKOUT</div></a>
-                <div class="toCart"><a href="cart.html">GO TO CART</a></div>
               </div>`
 });
 
 Vue.component('cart-item', {
   props: ['cartItem'],
-  template: `<div class="inCart">
-                    <a href="product.html">
-                      <img width = "72" :src="cartItem.img" :alt="cartItem.product_name">
-                    </a>
-                    <div class="productInCart">
-                      <a href="product.html"><p class="productName">{{cartItem.product_name}}</p></a>
-                      <a href="#"><p class="rating"></p></a>
-                      <a href="#"><p class="totalProduct">{{cartItem.quantity}}  x  \$ {{cartItem.quantity * cartItem.price}}</p></a>
+  template: `<div class="myCartProduct">
+                <ul>
+                  <li class="productInMyCart">
+                    <div>
+                      <a href="product.html">
+                        <img width = "100" :src="cartItem.img" :alt="cartItem.product_name">
+                      </a>
                     </div>
-                    <a href="#" class="deletFromCart" @click="$emit('remove', cartItem)">x</a>
-                  </div>`
+                    <div class="productInMyCartText">
+                      <a href="product.html"><p class="productName">{{cartItem.product_name}}</p></a>
+                      <p>Color: <a href="product.html"><span>Red</span></a></p>
+                      <p>Size: <a href="product.html"><span>Xll</span></a></p>
+                    </div>
+                  </li>
+                  <li>\$ {{cartItem.price}}</li>
+                  <li>{{cartItem.quantity}}</li>
+                  <li>FREE</li>
+                  <li>\${{cartItem.quantity * cartItem.price}}</li>
+                  <li><a href="#" class="deletFromCart" @click="$emit('remove', cartItem)">X</a></li>
+                </ul>
+            </div>`
 });

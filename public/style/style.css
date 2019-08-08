@@ -169,6 +169,8 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   position: absolute;
+  max-height: 898px;
+  z-index: 100;
   width: 262px;
   right: -20px; }
   .cartOpen .blockBorder {
