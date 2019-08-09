@@ -65,6 +65,45 @@ Vue.component('cartpage', {
                 :key="item.id_product"
                 :cart-item="item"
                 @remove="remove"></cart-item>
+                <div class="resetMyCart">
+                  <a href="cart.html"><div class="resetMyCartLeft">CLEAR SHOPPING CART</div></a>
+                  <a href="catalog.html"><div class="resetMyCartRight">CONTINUE SHOPPING</div></a>
+                </div>
+                <div class="totalMyCart">
+                  <div>
+                    <form class="totalMyCartForm">
+                      <p>SHIPPING ADRESS</p>
+                      <select>
+                        <option>Abkhazia</option>
+                        <option>Afghanistan</option>
+                        <option>Aland Islands</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>Andorra</option>
+                        <option>Angola</option>
+                        <option>Other...</option>
+                      </select>
+                      <input type="text" placeholder="State">
+                      <input type="text" placeholder="Postcode / Zip">
+                      <input type="submit" class="buttonTotalMyCart" value="GET A QUOTE">
+                    </form>
+                  </div>
+                  <div>
+                    <form class="totalMyCartForm">
+                      <p>COUPON DISCOUNT</p>
+                      <span>Enter your coupon code if you have one</span>
+                      <input type="text" placeholder="State">
+                      <input type="submit" class="buttonTotalMyCart" value="APPLY COUPON">
+                    </form>
+                  </div>
+                  <div class="grandTotal">
+                    <div>
+                      <p class="sTotal">Sub total<span>\${{totalPrice}}</span></p>
+                      <p class="gTotal">GRAND TOTAL<span>\${{totalPrice}}</span></p>
+                    </div>
+                    <a href="checkout.html" class="button">PROCEED TO CHECKOUT</a>
+                  </div>
+                </div>
               </div>`
 });
 
